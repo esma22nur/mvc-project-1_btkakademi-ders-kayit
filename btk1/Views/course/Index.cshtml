@@ -1,0 +1,36 @@
+﻿@model IEnumerable<candidate>
+@if (Model.Count() > 0)// KAYIT VAR İSE
+{
+	<h6 class="displsy-6"> Applications(@Model.Count())</h6>
+	<table class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th>E-mail</th>
+				<th>Name</th>
+				<th>Last Name</th>
+				<th>Apply at</th>
+				<th>Course</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach(candidate candidate in Model)
+			{
+				<tr>
+					<td>@candidate.email</td>
+					<td>@candidate.name</td>
+					<td>@candidate.lastname</td>
+					<td>@candidate.applyat</td>
+					<td>@candidate.selectedcourse</td>
+				</tr>
+			}
+		</tbody>
+
+	</table>
+}
+else
+{
+	<div class="alert alert-info">
+		There is no application .Please click  here to apply.
+		<a class="alert-link" asp-action="apply">APPLY</a>
+	</div>
+}
