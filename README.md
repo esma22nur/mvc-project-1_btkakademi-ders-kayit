@@ -28,7 +28,7 @@ BTK Akademi, öğrencilerine geniş bir ders yelpazesi sunmak amacıyla çeşitl
 - Form, MVC (Model-View-Controller) mimarisi kullanılarak geliştirilmiştir. Model kısmında öğrenci bilgilerini temsil eden bir sınıf tanımlanmıştır.
 - Controller, formun sunulduğu sayfayı yönetir ve kullanıcıdan gelen verileri işler.
 - View, formun HTML tabanlı görsel tasarımını içerir ve kullanıcıyla etkileşim sağlar.
-- Form, sunucu tarafında doğrulama yapar ve gerekirse kullanıcıya geri bildirimler sağlar.
+
 ---
 
 **4. Örnek Senaryo**
